@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing page for Ice-Cream</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <nav>
+                <div class="company">i-cream</div>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <ul class="nav-links" id="menu">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#product">Product</a></li>
+                        <li><a href="index.html#offer">Offer</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+        </nav>
+
+        <div class="home" id="home">
+                <div class="left">
+                        <h1>Eat Your Fav Ice Cream !</h1>
+                        <h3>Sweet ice cream for pleasure seekers.</h3>
+                        <br>
+                        <button class="bye-btn">Bye Online</button>
+                        <button class="find-btn">Find In Store</button>
+                </div>
+                <div class="right">
+                        <img src="img1.png" alt="">
+                </div>
+
+        </div>
+
+        <div class="ice-cream-section" id="product">
+                <div class="heading">
+                        <br><br><br>
+                        <h2>We Pride Ourselves On <br> Exceptional Flavors.</h2>
+                        <br><br>
+                        <p>The nearly -200 °C (-328 °F) liquid freezes the ingredients—sweet cream, flavoring, and
+                                handpicked mix-ins—almost instantaneously, creating tiny ice crystals and a smooth
+                                texture.</p>
+                </div>
+
+                <div class="products">
+                        <div class="product">
+                                <h3>7$</h3>
+                                <img src="img1.png" alt="Ice Cream Honey">
+                                <button class="buy-btn">BUY</button>
+                                <p class="name"><strong>Ice cream</strong> honey</p>
+                        </div>
+
+                        <div class="product">
+                                <h3>5$</h3>
+                                <img src="img1.png" alt="Choco Delight">
+                                <button class="buy-btn">BUY</button>
+                                <p class="name"><strong>Choco</strong> delight</p>
+                        </div>
+
+                        <div class="product">
+                                <h3>15$</h3>
+                                <img src="img1.png" alt="Carnival Strawberry">
+                                <button class="buy-btn">BUY</button>
+                                <p class="name"><strong>Carnival</strong> strawberry</p>
+                        </div>
+                </div>
+        </div>
+
+        <div class="offer" id="offer">
+                <div class="banner">
+                        <div class="banner-content">
+                                <h2>Flat 50% OFF, Hurry up before the stock ends</h2>
+                                <p>The nearly -200 °C (-328 °F) liquid freezes the ingredients — sweet cream, flavoring,
+                                        and handpicked.</p>
+                                <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="banner-image">
+                                <img src="img1.png" alt="Girl Eating Ice Cream">
+                        </div>
+                </div>
+        </div>
+
+        <div class="contact-section" id="contact">
+                <h2>Contact</h2>
+                <br><br>
+                <form class="contact-form">
+                        <div class="input-group">
+                                <div class="input-box">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" placeholder="Enter your name">
+                                </div>
+                                <br><br>
+                                <div class="input-box">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" placeholder="Enter your email">
+                                </div>
+                                <br>
+                        </div>
+                        <div class="message-box">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Type your message here"></textarea>
+                        </div>
+                        <button type="submit" class="send-btn">SEND</button>
+                </form>
+
+                <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Address, Floor 23, Earth</p>
+                        <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                        <p><i class="fas fa-envelope"></i> eCream@domain.com</p>
+                </div>
+        </div>
+
+        <footer>
+                <div class="r-info">© Copyright Ritika 2025 | Design By <b>Ritika</b> Distribution By
+                        <b>Ritika</b>
+                </div>
+                <div><a href="index.html#intro"><img src="arrow.png" alt=""></a></div>
+
+        </footer>
+
+
+        <script>
+                function toggleMenu() {
+                        const menu = document.getElementById("menu");
+                        menu.classList.toggle("show");
+                }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+* {
+        margin: 0;
+        padding: 0;
+        color: white;
+}
+
+html {
+        scroll-behavior: smooth;
+}
+
+body {
+        background-color: #2d4253;
+}
+
+
+nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: #2d4253;
+        color: white;
+        font-family: Arial, sans-serif;
+        border: 2px solid white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+}
+
+.company {
+        font-size: 5vh;
+        font-weight: bold;
+}
+
+.menu-icon {
+        display: none;
+        font-size: 5vh;
+        cursor: pointer;
+}
+
+ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        padding: 0;
+        margin: 0;
+}
+
+ul li a {
+        font-size: 3vh;
+        color: white;
+        text-decoration: none;
+}
+
+ul li a:hover {
+        color: rgb(209, 208, 208);
+        text-decoration: underline;
+        transition: 0.3s;
+}
+
+.home {
+        height: 90vh;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+}
+
+.left {
+        width: 50%;
+}
+
+.left h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+}
+
+.left h3 {
+        font-size: 1.5rem;
+}
+
+.bye-btn,
+.find-btn {
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-right: 10px;
+}
+
+.bye-btn {
+        background-color: rgb(174, 116, 227);
+        border: 1px solid rgb(174, 116, 227);
+        color: white;
+}
+
+.find-btn {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+}
+
+.right {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+}
+
+.right img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+}
+
+.ice-cream-section {
+        padding: 40px 5%;
+        height: 90vh;
+        background-color: #455e71;
+}
+
+.heading {
+        max-width: 800px;
+        margin: 0 auto 40px;
+}
+
+.heading h2 {
+        font-size: 2rem;
+        font-weight: bold;
+}
+
+.heading p {
+        font-size: 1rem;
+        color: #C0C0C0;
+}
+
+/* Products Grid */
+.products {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+}
+
+.product {
+        background-color: #3E5567;
+        padding: 20px;
+        border-radius: 10px;
+        width: 280px;
+        text-align: center;
+        position: relative;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+}
+
+.product:hover {
+        transform: translateY(-5px);
+}
+
+.product h3 {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 1.2rem;
+}
+
+.product img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 15px;
+}
+
+.buy-btn {
+        background-color: #8E44AD;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+}
+
+.buy-btn:hover {
+        background-color: #732D91;
+}
+
+.name {
+        font-size: 1.2rem;
+        color: #E0E0E0;
+        margin-top: 10px;
+}
+
+.offer {
+        height: 55vh;
+}
+
+.banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to right, #503B63, #3F2D56);
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 90%;
+        margin: 50px auto;
+}
+
+.banner-content {
+        max-width: 50%;
+}
+
+.banner-content h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        font-family: 'Courier New', monospace;
+}
+
+.banner-content p {
+        font-size: 1rem;
+        color: #E0E0E0;
+        margin-bottom: 20px;
+}
+
+.buy-btn {
+        background-color: #8E44AD;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+}
+
+.buy-btn:hover {
+        background-color: #732D91;
+}
+
+.banner-image img {
+        max-width: 250px;
+        height: auto;
+}
+
+.contact-section {
+        max-width: 80%;
+        margin: 50px auto;
+        padding: 40px;
+}
+
+.contact-form {
+        display: flex;
+        flex-direction: column;
+}
+
+.input-group {
+        display: flex;
+        justify-content: space-between;
+}
+
+.input-box {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+}
+
+label {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+}
+
+input,
+textarea {
+        background-color: #6B7A8F;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: white;
+}
+
+input::placeholder,
+textarea::placeholder {
+        color: white;
+        opacity: 1;
+        font-style: italic;
+}
+
+textarea {
+        min-height: 120px;
+        width: 100%;
+}
+
+.message-box {
+        margin-top: 20px;
+}
+
+.send-btn {
+        margin-top: 20px;
+        background-color: #8E44AD;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+}
+
+.send-btn:hover {
+        background-color: #732D91;
+}
+
+.contact-info {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.contact-info p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+
+.social-icons i {
+        font-size: 1.5rem;
+        margin-left: 15px;
+        cursor: pointer;
+}
+
+.social-icons i:hover {
+        color: #8E44AD;
+}
+
+footer{
+        margin-bottom: 45px;
+        font-size: 6vh;
+        text-align: center;
+}
+
+
+@media (max-width: 600px) {
+        nav {
+                text-align: center;
+        }
+
+        .company {
+                font-size: 3vh;
+        }
+
+        .menu-icon {
+                display: block;
+        }
+
+        .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                background-color: rgb(115, 118, 118);
+                width: 200px;
+                border-radius: 5px;
+                text-align: center;
+                padding: 10px;
+                z-index: 1;
+        }
+
+        .nav-links.show {
+                display: flex;
+        }
+
+        .nav-links li {
+                padding: 10px 0;
+                width: 100%;
+        }
+
+        .nav-links li a {
+                display: block;
+                width: 100%;
+                padding: 10px;
+        }
+
+        .home {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                height: 80vh;
+        }
+
+        .left,
+        .right {
+                width: 100%;
+        }
+
+        .left {
+                order: 2;
+        }
+
+        .right {
+                order: 1;
+                margin-bottom: 20px;
+        }
+
+        .left h1 {
+                font-size: 2rem;
+        }
+
+        .left h3 {
+                font-size: 1.2rem;
+        }
+
+        .bye-btn,
+        .find-btn {
+                width: 100%;
+                max-width: 250px;
+                margin: 10px 0;
+        }
+
+        .products {
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .ice-cream-section {
+                height: 130vh;
+        }
+
+        .banner {
+                flex-direction: column;
+                text-align: center;
+        }
+
+        .banner-content {
+                max-width: 100%;
+        }
+
+        .banner-image img {
+                margin-top: 20px;
+        }
+
+        .offer {
+                height: 55vh;
+        }
+
+        .contact-section {
+                text-align: center;
+        }
+        
+        .contact-section h2 {
+                font-size: 3rem;
+        }
+        
+        .contact-section label {
+                font-size: 2rem;
+        }
+
+        .input-group {
+                flex-direction: column;
+        }
+
+        .input-box {
+                width: 100%;
+        }
+
+        .contact-info {
+                flex-direction: column;
+                gap: 10px;
+        }
+
+        footer{
+                margin-bottom: 45px;
+                font-size: 2vh;
+        }
+
+}
